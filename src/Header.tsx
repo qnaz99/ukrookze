@@ -1,5 +1,5 @@
 "use client";
-
+import './index.css'
 import { useState } from "react";
 import {
   Dialog,
@@ -91,7 +91,7 @@ export default function Header() {
             <img
               alt="UKrooze logo"
               src="./img/logo.png"
-              className="h-6 w-auto scale-400"
+              className="h-6 w-auto scale-400 fade-in-delayed"
             />
           </a>
         </div>
@@ -109,7 +109,7 @@ export default function Header() {
           {routes.map((route) =>
             route.subPath ? (
               <Popover className="relative" key={route.name}>
-                <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-[#023bb3]">
+                <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-[#023bb3] fade-in-delayed">
                   {route.name}
                   <ChevronDownIcon
                     aria-hidden="true"
@@ -170,7 +170,7 @@ export default function Header() {
               <a
                 key={route.name}
                 href={route.path}
-                className="text-sm/6 font-semibold text-[#023bb3]"
+                className="fade-in-delayed text-sm/6 font-semibold text-[#023bb3]"
               >
                 {route.name}
               </a>
@@ -192,7 +192,7 @@ export default function Header() {
               <img
                 alt=""
                 src="./img/logo.png"
-                className="h-8 w-auto scale-200 pl-2"
+                className="h-8 w-auto scale-200 pl-2 fade-in-delayed"
               />
             </a>
             <button
