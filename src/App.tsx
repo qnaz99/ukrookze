@@ -5,6 +5,11 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
 import { Footer } from "./components/Footer";
+import art1 from '/img/art1.avif';
+import art2 from '/img/art2.avif';
+import testimony1 from '/img/testimony1.avif';
+import testimony2 from '/img/testimony2.avif';
+import testimony3 from '/img/testimony3.avif';
 
 const Home = () => {
   useEffect(() => {
@@ -13,20 +18,20 @@ const Home = () => {
 
   const testimonialBoxes = [
     {
-      image: "/img/testimony1.avif",
+      image: testimony1,
       name: "Bonnie",
       location: "Boca Raton",
       testimony:
         "So nice to have scooters available, lugging mine around is impossible. This allows me to get out more and feel alive!",
     },
     {
-      image: "/img/testimony2.avif",
+      image: testimony2,
       name: "Chauncy",
       location: "Del Ray Beach",
       testimony: "What a great program. I don't miss out on anything anymore",
     },
     {
-      image: "/img/testimony3.avif",
+      image: testimony3,
       name: "Aya",
       location: "North Miami Beach",
       testimony:
@@ -131,7 +136,7 @@ const Home = () => {
             className="md:w-1/4"
           >
             <img
-              src="/img/art1.avif"
+              src={art1}
               alt="scooter art 1"
               className="w-full h-full object-cover"
             />
@@ -143,7 +148,7 @@ const Home = () => {
             className="md:w-1/4"
           >
             <img
-              src="/img/art2.avif"
+              src={art2}
               alt="scooter art 2"
               className="w-full h-full object-cover"
             />
@@ -179,7 +184,7 @@ const Home = () => {
               <div className="h-[80%]">
                 <img
                   src={item.image} // Replace with your actual images
-                  alt={`Box ${item}`}
+                  alt={item.name}
                   className="w-full h-full object-cover"
                   data-aos="flip-up" data-aos-duration="2000"
                 />
