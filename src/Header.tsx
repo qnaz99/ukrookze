@@ -91,7 +91,7 @@ export default function Header() {
             <img
               alt="UKrooze logo"
               src="./img/logo.png"
-              className="h-6 w-auto scale-400 fade-in-delayed"
+              className="h-6 w-auto scale-400 fade-in-delayed pl-4 md:pl-0"
             />
           </a>
         </div>
@@ -192,7 +192,7 @@ export default function Header() {
               <img
                 alt=""
                 src="./img/logo.png"
-                className="h-8 w-auto scale-200 pl-4 md:pl-2 fade-in-delayed"
+                className="h-8 w-auto scale-200 pl-2 fade-in-delayed"
               />
             </a>
             <button
