@@ -26,13 +26,13 @@ const Home = () => {
     },
     {
       image: testimony2,
-      name: "Chauncy",
+      name: "Aya",
       location: "Del Ray Beach",
       testimony: "What a great program. I don't miss out on anything anymore",
     },
     {
       image: testimony3,
-      name: "Aya",
+      name: "Chauncy",
       location: "North Miami Beach",
       testimony:
         "These should be everywhere! They are always clean and charged. I love knowing they are available to use",
