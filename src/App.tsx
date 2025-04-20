@@ -53,12 +53,14 @@ const Home = () => {
                 Mobility scooter rentals for you to get moving! Rent a scooter
                 within minutes.
               </p>
-              <button
-                type="button"
-                className="text-black bg-white hover:bg-gray-100 focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 text-center animate-fade-up"
-              >
-                Learn More
-              </button>
+              <a href="#">
+                <button
+                  type="button"
+                  className="text-black bg-white hover:bg-gray-100 focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 text-center animate-fade-up"
+                >
+                  Learn More
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -162,12 +164,14 @@ const Home = () => {
               you! Our scooters offer a fun and unique experience for your
               guests, making any occasion memorable and more accessible!
             </p>
-            <button
-              type="button"
-              className="text-white bg-black hover:bg-black-100 focus:outline-none font-medium rounded-full text-sm px-5 py-4 text-center ml-auto"
-            >
-              Learn More
-            </button>
+            <a href="#">
+              <button
+                type="button"
+                className="text-white bg-black hover:bg-black-100 focus:outline-none font-medium rounded-full text-sm px-5 py-4 text-center ml-auto"
+              >
+                Learn More
+              </button>
+            </a>
           </div>
         </div>
       </section>
