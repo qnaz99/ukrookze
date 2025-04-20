@@ -53,18 +53,18 @@ const callsToAction = [
 ];
 
 const routes = [
-  {
-    name: "Second Draft",
-    path: "/",
-  },
+  // {
+  //   name: "Second Draft",
+  //   path: "#",
+  // },
   {
     name: "Services",
-    path: "/",
+    path: "#",
     subPath: products,
   },
   {
     name: "FAQ",
-    path: "/",
+    path: "#",
   },
   {
     name: "Rental Agreement",
