@@ -68,15 +68,15 @@ const routes = [
   },
   {
     name: "Rental Agreement",
-    path: "/",
+    path: "#",
   },
   {
     name: "Support",
-    path: "/",
+    path: "#",
   },
   {
     name: "Contact Us",
-    path: "/",
+    path: "#",
   },
 ];
 
