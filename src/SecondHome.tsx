@@ -5,13 +5,13 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
 import { Footer } from "./components/Footer";
-import art1 from "/img/art1.avif";
-import art2 from "/img/art2.avif";
-import testimony1 from "/img/testimony1.avif";
-import testimony2 from "/img/testimony2.avif";
-import testimony3 from "/img/testimony3.avif";
+import art1 from '/img/art1.avif';
+import art2 from '/img/art2.avif';
+import testimony1 from '/img/testimony1.avif';
+import testimony2 from '/img/testimony2.avif';
+import testimony3 from '/img/testimony3.avif';
 
-const Home = () => {
+const SecondHome = () => {
   useEffect(() => {
     AOS.init({ once: false });
   }, []);
@@ -40,7 +40,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="bg-[#2166fc]">
+    <div className="bg-[#023bb3]">
       <Header />
       <section id="banner">
         <div className="w-full h-[500px] bg-[url('/img/banner.png')] bg-cover bg-center bg-no-repeat animate-fade-up">
@@ -128,7 +128,7 @@ const Home = () => {
       <section>
         <div
           data-aos="zoom-in"
-          className="flex flex-col md:flex-row flex-wrap w-full px-10 py-10 bg-[#f7c01b]"
+          className="flex flex-col md:flex-row flex-wrap w-full px-10 py-10 bg-[#d9aa1e]"
         >
           <div
             data-aos="flip-left"
@@ -154,7 +154,7 @@ const Home = () => {
             />
           </div>
 
-          <div className="md:w-1/2 p-6">
+          <div className="md:w-1/2  p-6">
             <h2 className="text-4xl font-bold mb-4 playball">Host a fleet</h2>
             <p className="py-2 pb-8">
               Are you interested in hosting a UKrooze scooter fleet at your
@@ -164,7 +164,7 @@ const Home = () => {
             </p>
             <button
               type="button"
-              className="text-white bg-black hover:bg-black-100 focus:outline-none font-medium rounded-full text-sm px-5 py-4 text-center ml-auto"
+              className="text-white bg-black hover:bg-black-100 focus:outline-none font-medium rounded-full text-sm px-5 py-4 text-center"
             >
               Learn More
             </button>
@@ -175,11 +175,7 @@ const Home = () => {
       <div className="h-32" />
 
       <section>
-        <div
-          data-aos="fade-up"
-          data-aos-duration="3000"
-          className="flex flex-col md:flex-row gap-6 px-10 md:px-20 py-10"
-        >
+        <div data-aos="fade-up" data-aos-duration="3000" className="flex flex-col md:flex-row gap-6 px-10 md:px-20 py-10">
           {testimonialBoxes.map((item) => (
             <div
               key={item.name}
@@ -190,15 +186,20 @@ const Home = () => {
                   src={item.image} // Replace with your actual images
                   alt={item.name}
                   className="w-full h-full object-cover"
-                  data-aos="flip-up"
-                  data-aos-duration="2000"
+                  data-aos="flip-up" data-aos-duration="2000"
                 />
               </div>
 
               <div className="h-[20%] p-4 flex flex-col justify-center text-center">
-                <p className="text-sm text-gray-600 mb-2">{item.testimony}</p>
-                <h3 className="text-lg ">{item.name}</h3>
-                <h2 className="text-sm text-gray-400">{item.location}</h2>
+                <p className="text-sm text-gray-600 mb-2">
+                  {item.testimony}
+                </p>
+                <h3 className="text-lg ">
+                  {item.name}
+                </h3>
+                <h2 className="text-sm text-gray-400">
+                  {item.location}
+                </h2>
               </div>
             </div>
           ))}

@@ -105,8 +105,7 @@ const footerSections = [
 
 export function Footer() {
   return (
-    <footer>
-      <div className="w-full h-0.5 bg-blue-800" />
+    <footer className="bg-[#f7c01b]">
       <div className="mx-auto w-full max-w-screen-xl">
         <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
           {footerSections.map((section) => (
@@ -114,7 +113,7 @@ export function Footer() {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 {section.title}
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-white dark:text-whitefont-medium">
                 {section.links.map((link) => (
                   <li key={link.label} className="mb-4">
                     <a href={link.href} className="hover:underline">
@@ -128,7 +127,7 @@ export function Footer() {
         </div>
 
         <div className="px-4 py-6 md:flex md:items-center md:justify-between">
-          <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
+          <span className="text-sm text-white dark:white sm:text-center">
             © 2025{" "}
             <a href="#" className="hover:underline">
               UKrooze
