@@ -1,5 +1,5 @@
 "use client";
-import './index.css'
+import "../index.css";
 import { useState } from "react";
 import {
   Dialog,
@@ -21,7 +21,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
 
-const products = [
+const productPaths = [
   {
     name: "Rent a scooter",
     description: "Use the UKrooze app to rent a Scooter nearby within minutes",
@@ -53,18 +53,14 @@ const callsToAction = [
 ];
 
 const routes = [
-  // {
-  //   name: "Second Draft",
-  //   path: "#",
-  // },
   {
     name: "Services",
     path: "#",
-    subPath: products,
+    subPath: productPaths,
   },
   {
     name: "FAQ",
-    path: "#",
+    path: "/ukrooze/faq",
   },
   {
     name: "Rental Agreement",
@@ -73,6 +69,10 @@ const routes = [
   {
     name: "Support",
     path: "#",
+  },
+  {
+    name: "Host a Fleet",
+    path: "/ukrooze/host-fleet",
   },
   {
     name: "Contact Us",
@@ -90,12 +90,12 @@ export default function Header() {
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <a href="#">
+          <a href="/ukrooze/">
             <span className="sr-only">UKrooze</span>
             <img
               alt="UKrooze logo"
-              src="./img/logo.png"
-              className="h-6 w-auto scale-400 fade-in-delayed pl-4 md:pl-0"
+              src="./img/logo-raw.png"
+              className="h-6 w-auto scale-250 fade-in-delayed pl-4 md:pl-0"
             />
           </a>
         </div>
